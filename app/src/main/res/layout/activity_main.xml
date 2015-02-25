@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView android:text="Message to send:" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvMessageToSend"
+                android:textSize="20dp" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:id="@+id/etMessageToSend"
+                android:hint="Enter the message you want to send"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:text="Phone Number:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPhoneNumber"
+                android:textSize="20dp" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:id="@+id/etPhoneNumber"
+                android:hint="Enter the number you want to send the message to" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:text="Interval length:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvInterval"
+                android:textSize="20dp" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:id="@+id/etInterval"
+                android:hint="How many minutes between each nag?" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:id="@+id/startButton"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
